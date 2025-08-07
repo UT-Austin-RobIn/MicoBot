@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <!-- <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/> -->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <!-- <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/> -->
+
+
+  <!-- <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG"> -->
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <!-- <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image"> -->
+  <!-- Keywords for your paper to be indexed by-->
+  <!-- <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+
+  <title>MICoBot</title>
+  <link rel="icon" type="image/x-icon" href="static/images/brain.ico">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" -->
+  <!-- rel="stylesheet"> -->
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h2 class="title is-2 publication-title">Mixed-Initiative Dialog for Human-Robot Collaboration</h2>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                Anonymous Authors
+              </span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="static/pdfs/corl_anon_sub_20250620.pdf" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fa fa-file"></i>
+                    </span>
+                    <span>PDF</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="publication-video">
+            <iframe src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <!-- <p>
+            Effective robotic systems for long-horizon human-robot collaboration must adapt to a wide range of human partners, whose physical behavior, willingness to assist, and understanding of the robot's capabilities may change over time. This demands a tightly coupled communication loop that grants both agents the flexibility to propose, accept, or decline requests as they coordinate toward completing the task effectively. We apply a Mixed-Initiative dialog paradigm to Collaborative human-robot teaming and propose MICoBot, a system that handles the common scenario where both agents, using natural language, take initiative in formulating, accepting, or rejecting proposals on who can best complete different steps of a task. To handle diverse, task-directed dialog, and find successful collaborative strategies that minimize human effort, MICoBot makes decisions at three levels: (1) a meta-planner considers human dialog to formulate and code a high-level collaboration strategy, (2) a planner optimally allocates the remaining steps to either agent based on the robot’s capabilities (measured by a simulation-pretrained affordance model) and the human's estimated availability to help, and (3) an action executor decides the low-level actions to perform or words to say to the human. Our extensive evaluations in simulation and real-world—on a physical robot with 18 unique human participants over 27 hours—demonstrate the ability of our method to effectively collaborate with diverse human users, yielding significantly improved task success and user experience than a pure LLM baseline and other agent allocation models.
+          </p> -->
+          <p>Humans collaborate best through effective communication, during which negotiation, proposals, and suggestions can be conveyed about who is best suited to perform each part of a complex task.</p>
+          <p>By extension, seamless human-robot collaboration on long-horizon tasks also requires effective communication. For instance, the robot may need to ask the human for help on steps it cannot perform, and the human may prefer to do the sensitive but not the tedious steps.</p>
+          <p>This demands a communication paradigm that is not one-way, where the human does all the talking by commanding the robot, but bidirectional, where both the human and robot can initiate dialog and proposals to best divide up steps of a complex task.</p>
+          <p>To improve human-robot collaboration, we introduce this <a href="#mixed-init-dialog-def" style="color: #3273dc;">mixed-initiative dialog paradigm</a> to a real-world scenario of long-horizon collaborative mobile manipulation. We demonstrate through <a href="#user-study-samples" style="color: #3273dc;">user studies</a> with <a href="/user_study_dialog.html" style="color: #3273dc;">18 unique participants</a> that our system, MICoBot, can collaborate with humans exhibiting a wide spectrum of behaviors and engage in long, 20+ turn dialog exchanges to complete long-horizon tasks as an effective robotic collaborator.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+  <section class="hero">
+    <p>&nbsp;</p>
+    <h2 id="web-demo" class="title is-4" style="text-align: center; color: blue;"><a href="https://a3b6d41ea49316bf6e.gradio.live/">Click here to try conversing and collaborating with MicoBot in simulation.</a></h2>
+  </section>
+<!-- Youtube video -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <!-- Paper video. -->
+        <h2 class="title is-2" style="text-align: center;">3-min Introduction</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/OG7g8hlW_XE?si=8q0XlX_nam0SPAtQ" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End youtube video -->
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2" style="text-align: center;">MICoBot Overview</h2>
+      <div class="columns is-centered">
+        <div class="column is-four-fifths is-centered has-text-centered">
+          <h2 class="title is-4 has-text-justified" id="mixed-init-dialog-def">What is Mixed-Initiative Dialog?</h2>
+          <div class="content has-text-justified">
+            <p><a href="https://stacks.stanford.edu/file/druid:xr633ts6369/xr633ts6369.pdf">Mixed-initiative dialog</a> is a communication paradigm where both agents (human and robot) are able to ask each other questions, propose ideas, offer suggestions, in addition to responding and negotiating with the other agent.</p>
+
+            <p>MICoBot (<strong>M</strong>ixed-<strong>I</strong>nitiative <strong>Co</strong>llaborative Ro<strong>bot</strong>) is the first work to our knowledge to connect <strong>mixed-initiative dialog</strong> to real-world <strong>human-robot interaction</strong>.</p>
+          </div>
+          <!-- <h2 class="title is-4 has-text-justified">Contributions</h2>
+          <div class="content has-text-justified">
+            <p>
+              MICoBot (<strong>M</strong>ixed-<strong>I</strong>nitiative <strong>Co</strong>llaborative Ro<strong>bot</strong>) is the first work to our knowledge to connect <strong>mixed-initiative dialog</strong> to real-world <strong>human-robot interaction</strong>.
+            </p>
+            <p>
+              It makes the following concrete contributions:
+              <ol>
+                <li>A new <strong>problem setting</strong> that integrates mixed-initiative natural language dialog with mixed-initiative human-robot interaction. We address a realistic scenario in human-robot collaboration where both the robot and the human can initiate dialogs to fulfill a long horizon task, while they can both also perform different parts of the task, as negotiated via dialogs</li>
+                <li>A novel <strong>optimization framework</strong> for task allocation, balancing human and robot effort and success through a unified metric</li>
+                <li>A new MiniBehavior-based simulator for collaborative household tasks that includes LLM-controlled virtual humans</li>
+                <li>A <strong>robotic system and hierarchical framework</strong> for mixed-initiative, speech-based human-robot collaboration that flexibly adapts to a wide range of real human collaborators in long-horizon manipulation tasks.</li>
+              </ol>
+            </p>
+          </div>
+          <h2 class="title is-4 has-text-justified">Problem Setting</h2>
+          <div class="content has-text-justified">
+            <p>
+              In our problem setting, both the human and robot can take <strong>physical actions</strong> that affect the state of the world and also <strong>verbal actions (dialog)</strong> that are observed by the other agent. The human is assumed to be perfectly competent not necessarily willing to perform any step of the task. The robot is assumed to be capable of only a subset of the plan steps, with varying success rate, and hence must require some human assistance.
+            </p>
+            <p>
+              The goal of our robotic system is to <strong>optimally allocate tasks</strong> that <strong>maximize task success rate</strong> while <strong>minimizing human effort</strong> and <strong>comply with any verbally-specified conditions from the human</strong> (such as if the human wants a particular agent to perform a step in the plan).
+            </p>
+          </div> -->
+          <h2 class="title is-4 has-text-justified">Technical Approach</h2>
+          <!-- <div class="content has-text-justified">
+            <p>
+              MICoBot processes and formulates mixed-initiative dialog for collaborative, long-horizong manipulation tasks by making decisions at 3 key levels:
+              <ol>
+                <li><strong>Meta Planner</strong>: Given the world state and human dialog, outputs code that adaptively allocates next actions between the two agents.</li>
+                <li><strong>Iterative Planner</strong>: Executes the meta planner's code to determine what the robot's next action should be. Specifically, it estimates the human’s helpfulness and the robot’s capabilities through Q-functions trained in simulation to determine the best task allocation of the future steps between the robot and human. The optimal task allocation governs whether the robot should perform a physical action to do the next step itself, or a verbal action to either respond to the human or ask them to perform the next step.</li>
+                <li><strong>Action Executor</strong>: Given the next action decided by the iterative planner, executes that action. If a physical action, the action executor uses an RGBD sensor and a map to output a sequence of low-level joint commands. If a verbal action, the action executor uses an LLM and dialog parameters (such as the step(s) to ask the human to perform) to output the exact words to speak to the human.</li>
+              </ol>
+            </p>
+          </div> -->
+          <div class="content">
+            <video poster="static/images/fig3_v2.png" id="tree" controls="" muted="" loop="" width="100%">
+              <source src="static/videos/system_figure_animation_v1_handbraked.mp4" type="video/mp4">
+              <img src="static/images/fig3_v2.png" alt="Method Figure" width="100%" />
+            </video>
+            <!-- Play video only when user scrolls to it -->
+            <script>
+              const video = document.getElementById('tree');
+
+              new IntersectionObserver(([entry], observer) => {
+                if (entry.isIntersecting) {
+                  video.play();
+                  observer.unobserve(video);
+                }
+              }).observe(video);
+            </script>
+          </div>
+          <h2 class="title is-4 has-text-justified">Prompt Samples</h2>
+          <div class="content has-text-justified">
+            <p><a href="static/txts/metaplanner_prompt.txt">Meta Planner</a> | <a href="static/txts/p_help_estimator_prompt.txt">p_help estimator</a> | <a href="static/txts/dialog_action_executor_prompt.txt">Verbal Action Executor</a></p>
+            <p><a href="static/txts/llm_baseline_prompt.txt">LLM baseline</a></p>
+            <!-- <p>The state description and dialog history change during the course of a task, and the plan tree depends on the task, but these are some samples of the actual prompts fed to GPT-powered modules of our method on Task 1 (open and pour package into bowl).</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="title is-2" style="text-align: center;">Experiments</h2>
+      <div class="columns is-centered">
+        <div class="column is-four-fifths is-centered has-text-centered">
+          <!-- <h2 class="title is-4 has-text-justified">Experimental Metrics</h2>
+          <div class="content has-text-justified">
+            <p>We evaluate our method objectively (sucess rate by amount of human effort) and subjectively (human user study ratings).</p>
+            <p>We perform a human user study with 18 unique participants in the real-world, and nearly a thousand trials in simulation.</p>
+          </div>
+          </br> -->
+          <!-- <h2 class="title is-4 has-text-justified">Task Suites</h2>
+          <div class="content has-text-justified">
+            <p>Here are some photos of our tasks.</p>
+          </div> -->
+
+          <h2 class="title is-4 has-text-justified" id="user-study-samples">User Study Samples</h2>
+          <div class="content has-text-justified">
+            <p>We show recordings of our system running in-the-wild with real human collaborators during our user studies.</p>
+          </div>
+          <h2 class="title is-5 has-text-justified">Task 1: Open and Pour Package into Bowl</h2>
+          <div class="content has-text-justified">
+            <div class="content has-text-justified">
+              <p>This was our shortest task and required the least human effort. This user study reenactment (using the exact same dialog as what occurred in our actual user study) demonstrates an initially reluctant human that gets convinced by the robot to help on the step the robot is incapable of.</p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/WTLMb3m3wRw?si=2qgj2KFolRiUbf1Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+          <h2 class="title is-5 has-text-justified">Task 2: Assemble Toy Car</h2>
+            <div class="content has-text-justified">
+              <p>This task required the most human effort, and this user study is an example of a mostly compliant human that occassionally rejects the robot's help requests.</p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Qe1KhN_fc9o?si=VLBMVNOYLM-lh-Zx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          <h2 class="title is-5 has-text-justified">Task 3: Pack Gift Box</h2>
+          <div class="content has-text-justified">
+            <p>This user study exhibits a better balance between human and robot-initiated dialog exchanges compared to the previous two user study videos.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/qtfS3SU4rLs?si=Zq51_r-0zzAIF8dU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+
+          </br>
+          <h2 class="title is-4 has-text-justified">Complete Compilation of User Study Dialog Transcripts</h2>
+          <div class="content has-text-justified">
+            See our <a href="/user_study_dialog.html">complete list of dialog transcripts</a> from all 18 participants in our real-world user studies. In particular, some interesting exchanges (both success and failure cases) are:
+            <ul>
+              <li><a href="/user_study_dialog.html#user-study-1A">MICoBot successfully convincing an initially reluctant human to help out (task 1)</a></li>
+              <li><a href="/user_study_dialog.html#user-study-2D">An extended, 30+ round dialog exchange yielding decent progress but not task completion (task 2)</a></li>
+              <li><a href="/user_study_dialog.html#user-study-3C">A mostly human-driven dialog exchange (task 3)</a></li>
+            </ul>
+            Compare this to the 18 user study <a href="baseline_dialog.html">dialog transcripts from our LLM baseline</a>, which exhibit considerably less mixed-initiative dialog and collaborative success.
+          </div>
+          </br>
+          <!-- <h2 class="title is-4 has-text-justified">Baselines</h2>
+          <div class="content has-text-justified">
+            <p>In the real world, we evaluate against three baselines.
+              <ol>
+                <li><strong>LLM</strong>: Because multiple components of our method are powered by LLMs, we compare our approach to a pure LLM baseline given the same information as our meta-planner. The LLM baseline is also provided with a list of the robot’s available skills and assumes that the human always successfully completes a step once they agree to perform it. The LLM baseline is prompted to produce a plan allocation $G$ that primarily optimizes for task success and secondarily minimizes human effort.</li>
+                <li><strong>R-only</strong>: This is a simple baseline that takes the LLM rollouts in the real-world and assumes the human never helps in any of the trials.</li>
+                <li><strong>RECB (Random Effort-Controlled Baseline)</strong>: To control for the amount of human effort elicited in the user studies with our method, we compute this random allocation baseline that does not involve a human participant. We denote the percentage of steps done by the human in the user trials of our method as $p_{c}$. RECB randomly allocates the current step to the human with probability $p_{c}$, and assumes the human always accepts the robot's request. RECB also assumes access to oracle robot primitives with 100% success rate.</li>
+              </ol>
+            <p>In simulation, we compare against:
+              <ol>
+                <li><strong>LLM</strong>: Same as in real world.</li>
+                <li><strong>RL baseline</strong>: hierarchical task allocator + robot policy (see paper appendix for more details).</li>
+                <li><strong>Random</strong>: Similar to RECB, but randomly allocates either agent (with probability 50%) to perform the next step.</li>
+              </ol>
+            </p>
+          </div>
+
+          <h2 class="title is-4 has-text-justified">Ablations</h2>
+          <div class="content has-text-justified">
+            <p>In simulation, we ablate our method with the following changes:
+              <ol>
+                <li><strong>H-init</strong>: The robot cannot initiate dialog.</li>
+                <li><strong>R-init</strong>: The human cannot initiate dialog.</li>
+                <li><strong>w/o Plan Hierarchy</strong>: No hierarchical plan structure, so the robot must ask the human to perform every low-level step.</li>
+                <li><strong>w/o p_H</strong>: No estimate of how likely the human is to help the robot.</li>
+              </ol>
+            </p>
+          </div> -->
+
+          <h2 class="title is-4 has-text-justified">Results</h2>
+          <div class="content">
+            <p>Performance Average over Real (left) and Sim (right).</p>
+          </div>
+
+    <div display="flex" justify-content="space-around">
+      <a href="static/images/combined_task_vs_effort.png" target="_blank">
+        <img src="static/images/combined_task_vs_effort.png" alt="Figure 1" width="49%" />
+      </a>
+      <a href="static/images/combined_task_vs_effort_sim.png" target="_blank">
+        <img src="static/images/combined_task_vs_effort_sim.png" alt="Figure 2" width="49%" />
+      </a>
+    </div>
+
+          </br>
+          <h2 class="title is-5 has-text-justified">Does our method achieve the best trade-off between task success and minimizing human effort?</h2>
+          <div class="content has-text-justified">
+            <p>In our real-world user study, MICoBot achieves a 61% task success rate, compared to 0% for the LLM baseline, by leveraging human assistance on 38% of the steps. (Figure on left.)
+              <!-- The LLM baseline underperformed because it prioritized minimizing human effort over task completion—requesting and receiving help in only 10% of steps, even when the robot lacked the capability to execute them. To control for the amount of human effort received, we compare our method to RECB. Despite RECB assuming oracle robot primitives with 100% success, our method still significantly outperforms it. -->
+            </p>
+          </div>
+          <h2 class="title is-5 has-text-justified">How do users feel about working with our system?</h2>
+          <div class="content has-text-justified">
+            <p>In an A/B blind preference test, 83% of the 18 users preferred our method MICoBot over the LLM baseline, and rated MICoBot considerably higher on four Likert-score metrics.</p>
+            <img src="static/images/likert_plot.png"></img>
+          </div>
+
+          <h2 class="title is-5 has-text-justified">Is mixed-initiative dialog critical to our method's performance?</h2>
+          <div class="content has-text-justified">
+            <p>The ablations in simulation demonstrate our full method outperforms both ablated variants that restrict dialog to single-initiative modes: robot-only initiation (R-init) and human-only initiation (H-init). (Figure on right.) These results underscore the importance of mixed-initiative dialog in enabling flexible, robust human-robot collaboration.
+            </p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            Template: <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+            target="_blank">Academic Project Page Template</a>, adopted from the <a
+            href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>

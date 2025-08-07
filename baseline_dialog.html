@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Study Dialog</title>
+
+  <style>
+    body {
+      font-family: 'Google Sans', sans-serif;
+      background-color: #f0f0f0;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #222;
+      border-bottom: 2px solid #999;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+    h3 {
+      color: #444;
+      margin-top: 30px;
+    }
+    .scene {
+      display: grid;
+      grid-template-columns: 1fr 5fr 0.5fr 0.5fr;
+      gap: 15px;
+      background-color: #fff;
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    .scene::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      grid-column: 3;
+      width: 1px;
+      background-color: #ccc;
+      left: calc(1fr + 5fr + 7.5px);
+      left: var(--grid-line-3-position);
+    }
+    .scene-inner-wrapper {
+      display: contents;
+    }
+     .vertical-line {
+      grid-column: 3;
+      grid-row: 1 / -1;
+      background-color: #ccc;
+      width: 1px;
+      margin-left: -7.5px;
+      height: auto;
+      z-index: 1;
+    }
+    .character {
+      font-weight: bold;
+      text-align: right;
+      padding-right: 10px;
+      color: #333;
+    }
+    .line {
+      font-style: italic;
+      font-family: Georgia, serif;
+    }
+    .robot {
+      color: #2BAE66;
+    }
+    .human {
+      color: #279EFF;
+    }
+    .dialog-annotation-header {
+      grid-column: 3 / span 2;
+      text-align: center;
+      font-weight: bold;
+      padding-bottom: 5px;
+      padding-left: 7.5px;
+    }
+    .annotation-robot, .annotation-human {
+      font-size: 0.8em;
+      text-align: center;
+      padding: 0 1px;
+      word-break: break-word;
+    }
+    .annotation-robot {
+      padding-left: 15px;
+    }
+    .annotation-header-line {
+      grid-column: 3 / span 2;
+      border-bottom: 1px solid #ccc;
+      margin-top: -10px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1><center>All User Study Dialog Transcripts (Baseline) </center></h1>
+
+  <p><a href="/">⬅️ Back to MICoBot homepage</a></p>
+
+  These are dialog transcriptions between the <span class="robot">robot</span> and <span class="human">human</span> from the speech-to-speech interactions of ALL our user studies. We conducted 18 user studies with our robotic system in the real world, each with a unique participant. Participants were told to be as indifferent or as proactively helpful as they wished.
+
+  <h3>Table of Contents</h3>
+  <p>
+    <a href="#task-1">Task 1</a> User Studies:
+    <a href="#user-study-1A">1A</a>,
+    <a href="#user-study-1B">1B</a>,
+    <a href="#user-study-1C">1C</a>,
+    <a href="#user-study-1D">1D</a>,
+    <a href="#user-study-1E">1E</a>,
+    <a href="#user-study-1F">1F</a>
+  </p>
+
+  <p>
+    <a href="#task-2">Task 2</a> User Studies:
+    <a href="#user-study-2A">2A</a>,
+    <a href="#user-study-2B">2B</a>,
+    <a href="#user-study-2C">2C</a>,
+    <a href="#user-study-2D">2D</a>,
+    <a href="#user-study-2E">2E</a>,
+    <a href="#user-study-2F">2F</a>
+  </p>
+
+  <p>
+    <a href="#task-3">Task 3</a> User Studies:
+    <a href="#user-study-3A">3A</a>,
+    <a href="#user-study-3B">3B</a>,
+    <a href="#user-study-3C">3C</a>,
+    <a href="#user-study-3D">3D</a>,
+    <a href="#user-study-3E">3E</a>,
+    <a href="#user-study-3F">3F</a>
+  </p>
+  
+  <h2 id="task-1">Task 1: Open and Pour Package into Bowl</h2>
+
+  <h3 id="user-study-1A">User Study 1A</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings bowl, then brings package.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Good job.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings scissors.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Cool! You brought the scissors.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Terminated episode, because the robot allocated the "open package" task to itself, which it can't do]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+  </div>
+
+  <h3 id="user-study-1B">User Study 1B</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings bowl.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Can you bring the cup?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings package.]</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Can you bring me scissors so I can open the package?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">Sure! I will bring the scissors to you.</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings scissors.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Can you hand over the scissors to me?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I'm unable to bring you the sensor right now. But I will continue with the current task.</div>
+    <div class="annotation-robot">reject</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">What are you going to do next?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">Next, I will open the package. After that, I will pour the contents into the bowl!</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Ok, please go ahead.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Terminated episode, because the robot allocated the "open package" task to itself, which it can't do]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+  </div>
+
+  <h3 id="user-study-1C">User Study 1C</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings bowl, then brings package, then brings scissors.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">Could you please open the package with the scissors and place it on the coffee table? Thank you!</div>
+    <div class="annotation-robot">helpreq</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="human">[Opens package.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">accept</div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Pours package into bowl, but package contents do not land into bowl. Primitive failure.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+  </div>
+
+  <h3 id="user-study-1D">User Study 1D</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings bowl, then brings package, then brings scissors.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Terminated episode, because the robot allocated the "open package" task to itself, which it can't do]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+  </div>
+
+  <h3 id="user-study-1E">User Study 1E</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Can you bring me the scissors before the package?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">Ok, I will bring the scissors to you first after I move the package and bowl to the coffee table.</div>
+    <div class="annotation-robot">reject</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Sure.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings bowl, then brings package. However, package was tipped over while placing.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">Could you please put the scissors on the coffee table? Thank you!</div>
+    <div class="annotation-robot">helpreq</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Can you bring it for me?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">reject, helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings scissors, but is unable to place it properly since package was tipped over. Primitive failure.]</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+  </div>
+
+  <h3 id="user-study-1F">User Study 1F</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings bowl, then brings package, then brings scissors.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I'm working on cutting the package with scissors on the coffee table, then pouring it into the bowl!</div>
+    <div class="annotation-robot">offer</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Ok go ahead.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Terminated episode, because the robot allocated the "open package" task to itself, which it can't do]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+  </div>
+
+  <h2 id="task-2">Task 2: Assemble Toy car</h2>
+
+  <h3 id="user-study-2A">User Study 2A</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings parts tray.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings wheels, but fails due to a perception error.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+  </div>
+
+  <h3 id="user-study-2B">User Study 2B</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings parts tray, then brings wheels.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+    <div class="character human">Human</div>
+    <div class="line human">Thank you!</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings drill, but fails due to perception error.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+  </div>
+
+  <h3 id="user-study-2C">User Study 2C</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">Sure, thanks for getting the drill! I will bring the parts tray to the coffee table next.</div>
+    <div class="annotation-robot">offer</div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings parts tray, then brings wheels.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">Could you please pick up the drill, and place it on the coffee table? Thanks!</div>
+    <div class="annotation-robot">helpreq</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Ok, I will get the drill now!</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">accept</div>
+
+    <div class="character human">Human</div>
+    <div class="human">[Brings drill.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Terminated episode, because the robot allocated the "put on wheels" task to itself, which it can't do]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+  </div>
+
+  <h3 id="user-study-2D">User Study 2D</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings parts tray.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Can you get the wheels?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">Sure, I can get the wheels!</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I am getting the wheels now!</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Thank you.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings wheels.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Can you get the drill from the kitchen?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings drill.]</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Can you give me the wheel screws from the box?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I don't see the wheel screws in the box, can you please assist with locating them?</div>
+    <div class="annotation-robot">reject, helpreq</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Do you see wheel caps in the box?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">ignore</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I will check for wheel caps in the box, and inform you of their presence!</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Ok thank you.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Did you find wheel caps in the box?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I am still in the process of checking for wheel caps in the box, and will update you shortly!</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">I will assemble the wheels on the car. Can you give me the new drill bit?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">offer, helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I will switch to the new drill bit for you. Please proceed with assembling the wheels on the car.</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Ok thank you, can you switch the drill bit? It's not right though...</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">reject, helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I will switch the drill bit to the correct one for you. Please proceed with assembling the wheels on the car once it's ready.</div>
+    <div class="annotation-robot">accept, helpreq</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">No, I will switch the wheels first and then you can change the drill bit.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">reject</div>
+
+    <div class="character human">Human</div>
+    <div class="human">[Puts wheels on car.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Drops the drill bit.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Can you retry picking up the new drill bit?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I will retry picking up the new drill bit myself.</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Thank you.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Can you give me the green car seat from the box?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">The green car seat will be handed to you shortly.</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Can you pick up the car seat from the box and put it on the coffee table?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I will place the car seat on the coffee table shortly!</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+    
+    <div class="character human">Human</div>
+    <div class="line human">Ok thank you!</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Can you pick up the car seat and put it on the table?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I will proceed with the current tasks and then place the car seat on the table for you!</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">What tasks?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Can you pick up the window and put it on the coffee table?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I will take care of picking up the window and placing it on the coffee table shortly!</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Thank you.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">I need to think about what I want to do next, I don't know.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Terminated episode, because the robot allocated the "put on wheels" task to itself, which it can't do]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+  </div>
+
+  <h3 id="user-study-2E">User Study 2E</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings parts tray, then brings wheels.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Go get the driver.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings drill but drops it.]</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Can you pick up the driver?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I am currently focusing on assembling the toy car, starting with the wheels. If you mean the driver bit for the drill, I will handle that soon.</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">But you need a driver to attach the wheels.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I understand your point about needing the driver. I plan to switch to the correct drill bit shortly. Let's get the wheels ready first, and then I'll handle the bit switch.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Ok.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Terminated episode, because the robot didn't pick the drill up.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+  </div>
+
+  <h3 id="user-study-2F">User Study 2F</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings parts tray, then brings wheels, then brings drill.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Terminated episode, because the robot allocated the "put on wheels" task to itself, which it can't do]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+  </div>
+
+  <h2 id="task-3">Task 3: Pack Gift Box</h2>
+
+  <h3 id="user-study-3A">User Study 3A</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Folds down box flap. Then puts tissue paper and car into box.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Terminated episode, because the robot allocated the "cover lid" task to itself, which it can't do]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+  </div>
+
+  <h3 id="user-study-3B">User Study 3B</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Folds down box flap.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">So next, I need you to put the yellow paper in the box. laying flat. Please, good sir.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">Absolutely, I will put the yellow paper in the box as you requested.</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Cool thank you, and then after that you can put the car in the box.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Puts tissue paper into box.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">So I need you to flatten out the paper by picking it up and then rotating it a little bit and then and then putting it in a box in that rotated position so it lays flat.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I will proceed with placing the car inside the box, covering it with the lid, and then wrapping and decorating it. Please let me know if there's anything specific you'd like to change or assist with.</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">You do that, I'll fix the paper, but yeah, now you can put the car in.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">split proposal</div>
+
+    <div class="character human">Human</div>
+    <div class="human">[Flattens the tissue paper.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">Thank you for your help! Let's start with my tasks, and I'll leave the wrapping and taping to you for the best results.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">[Places car inside box.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">I really want you to try and pick up the lid and put it on the box. It's easy, you just grab it from one of the sides, then turn it 180 degrees, and then put it on the box. And then I can fit it from there.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">split proposal</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I will pick up the lid and place it on the box as requested.</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Thanks dawg, appreciate it.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Terminated episode, because the robot allocated the "cover lid" task to itself, which it can't do]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+  </div>
+
+  <h3 id="user-study-3C">User Study 3C</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Folds down box flap.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Can you please put the tissue and car inside the box?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Puts tissue paper inside box.]</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Thank you, go ahead for car as well.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Puts car inside box.]</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Good job! I'll cover the box.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">offer</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">Could you please cover the box with the lid? Thank you!</div>
+    <div class="annotation-robot">helpreq</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Of course, I can do that!</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">accept</div>
+
+    <div class="character human">Human</div>
+    <div class="human">[Covers box with lid.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings ribbons.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Good job, I'll seal the box.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">offer</div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Yeah, I'll seal the box.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">offer</div>
+
+    <div class="character human">Human</div>
+    <div class="human">[Wraps ribbons around box.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Terminated episode, because the robot allocated the "cut tape" task to itself, which it can't do]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+  </div>
+
+  <h3 id="user-study-3D">User Study 3D</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Hey, do you need help?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">offer</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I appreciate the offer! I've got most of this, but can you help with wrapping the ribbons?</div>
+    <div class="annotation-robot">helpreq</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Sure yeah we can do that after you get to that step.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">accept</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I'll handle most of the tasks, and ask for your help when wrapping the ribbons.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Coolio.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Folds down box flap, then puts tissue paper inside box.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Thank God you did that. Do you want me to speed things up?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">offer</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">Thanks for offering to help! Let's work together to speed things up.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Okay, what do you want me to do?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">offer</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">Thanks! Could you please cover the lid on the box while I finish the other steps?</div>
+    <div class="annotation-robot">helpreq</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">You sure about that? I think there's something you need to do first.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">reject</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I'll continue handling the steps and ask for your help when needed.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">No I want to help you with the next step. I'll put the car in the box.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">offer</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">Could you please pick up the car box and place it down? Thank you so much!</div>
+    <div class="annotation-robot">helpreq</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Cool, I will pick up the car and put it into the box.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">accept</div>
+
+    <div class="character human">Human</div>
+    <div class="human">[Covers box with lid.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Brings ribbons.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Cool, what's up?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">Great! I'll have you wrap the ribbons around the box while I finish up the remaining steps.</div>
+    <div class="annotation-robot">helpreq</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Sounds good I'm on it.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">accept</div>
+
+    <div class="character human">Human</div>
+    <div class="human">[Wraps ribbons around box.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Yes I have done that. You can do the rest, right?</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Terminated episode, because the robot allocated the "cut tape" task to itself, which it can't do]</div>
+    <div class="annotation-robot">ignore</div>
+    <div class="annotation-human"></div>
+  </div>
+
+  <h3 id="user-study-3E">User Study 3E</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Folds down box flap,then puts tissue paper inside box.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">You should straighten out the parchment paper in the box.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">I will straighten out the parchment paper in the box before continuing.</div>
+    <div class="annotation-robot">accept</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Make sure it's laying flat.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Tries to place the car inside the box. However, it drops it.]</div>
+    <div class="annotation-robot">ignore</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">I'll grab the cart for you and straighten out the parchment paper.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">offer</div>
+
+    <div class="character human">Human</div>
+    <div class="human">[Picks up the car, then straightens out the tissue paper.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Places the car in the box.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">It looks good, continue assembling the box.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">helpreq</div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Terminated episode, because the robot allocated the "cover lid" task to itself, which it can't do]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+  </div>
+
+  <h3 id="user-study-3F">User Study 3F</h3>
+  <div class="scene">
+    <div style="grid-column: 1 / span 2;"></div>
+    <div class="dialog-annotation-header">Dialog Annotation</div>
+
+    <div class="vertical-line"></div>
+
+    <div class="character robot"></div>
+    <div class="robot"></div>
+    <div class="annotation-robot">Robot</div>
+    <div class="annotation-human">Human</div>
+
+    <div class="annotation-header-line"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Folds down box flap, then puts tissue paper inside box.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Let me put the paper in as well as the car.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">offer</div>
+
+    <div class="character robot">Robot</div>
+    <div class="line robot">Could you please pick up the car box and place it down? Thank you!</div>
+    <div class="annotation-robot">helpreq</div>
+    <div class="annotation-human"></div>
+
+    <div class="character human">Human</div>
+    <div class="line human">Yeah.</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human">accept</div>
+
+    <div class="character human">Human</div>
+    <div class="human">[Places car inside box.]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+
+    <div class="character robot">Robot</div>
+    <div class="robot">[Terminated episode, because the robot allocated the "cover lid" task to itself, which it can't do]</div>
+    <div class="annotation-robot"></div>
+    <div class="annotation-human"></div>
+  </div>
+
+</body>
+</html>
