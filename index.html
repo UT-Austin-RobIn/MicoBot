@@ -95,11 +95,19 @@
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
-                  <a href="static/pdfs/corl_anon_sub_20250620.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://arxiv.org/pdf/2508.05535" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fa fa-file"></i>
                     </span>
-                    <span>PDF</span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <a href="static/pdfs/icra_poster_v1.pdf" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fa fa-file"></i>
+                    </span>
+                    <span>Poster</span>
                   </a>
                 </span>
               </div>
@@ -126,6 +134,32 @@
 </section> -->
 <!-- End youtube video -->
 
+<!-- Youtube video -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <!-- Paper video. -->
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+
+            <div class="publication-video">
+              <iframe src="https://www.youtube.com/embed/dnBTqf_Y7TM?si=NB_V6mMtZ-it8ARr" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End youtube video -->
+
+  <section class="hero">
+    <p>&nbsp;</p>
+    <h2 id="web-demo" class="title is-4" style="text-align: center; color: blue;"><a href="https://f32ad956a4108b333d.gradio.live/">Click here to try conversing and collaborating with MicoBot in simulation.</a></h2>
+  </section>
+
 <!-- Paper abstract -->
 <section class="section hero is-light">
   <div class="container is-max-desktop">
@@ -145,32 +179,6 @@
   </div>
 </section>
 <!-- End paper abstract -->
-
-  <section class="hero">
-    <p>&nbsp;</p>
-    <h2 id="web-demo" class="title is-4" style="text-align: center; color: blue;"><a href="https://eeeae98e00c402064d.gradio.live/">Click here to try conversing and collaborating with MicoBot in simulation.</a></h2>
-  </section>
-<!-- Youtube video -->
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container">
-        <!-- Paper video. -->
-        <h2 class="title is-2" style="text-align: center;">3-min Introduction</h2>
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-
-            <div class="publication-video">
-              <iframe src="https://www.youtube.com/embed/OG7g8hlW_XE?si=8q0XlX_nam0SPAtQ" title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End youtube video -->
   <section class="section">
     <div class="container">
       <h2 class="title is-2" style="text-align: center;">MICoBot Overview</h2>
@@ -324,36 +332,30 @@
             </p>
           </div> -->
 
-          <h2 class="title is-4 has-text-justified">Results</h2>
-          <div class="content">
-            <p>Performance Average over Real (left) and Sim (right).</p>
-          </div>
-
+<h2 class="title is-4 has-text-justified">Results</h2>
     <div display="flex" justify-content="space-around">
-      <a href="static/images/combined_task_vs_effort.png" target="_blank">
-        <img src="static/images/combined_task_vs_effort.png" alt="Figure 1" width="49%" />
+      <a href="static/images/combined_success_vs_effort_real_sim.svg" target="_blank">
+        <img src="static/images/combined_success_vs_effort_real_sim.svg" alt="Figure 1" width="49%" />
       </a>
-      <a href="static/images/combined_task_vs_effort_sim.png" target="_blank">
-        <img src="static/images/combined_task_vs_effort_sim.png" alt="Figure 2" width="49%" />
+      <a href="static/images/likert_plot_4x1.svg" target="_blank">
+        <img src="static/images/likert_plot_4x1.svg" alt="Figure 2" width="49%" />
       </a>
     </div>
 
           </br>
           <h2 class="title is-5 has-text-justified">Does our method achieve the best trade-off between task success and minimizing human effort?</h2>
           <div class="content has-text-justified">
-            <p>In our real-world user study, MICoBot achieves a 61% task success rate, compared to 0% for the LLM baseline, by leveraging human assistance on 38% of the steps. (Figure on left.)
-              <!-- The LLM baseline underperformed because it prioritized minimizing human effort over task completion—requesting and receiving help in only 10% of steps, even when the robot lacked the capability to execute them. To control for the amount of human effort received, we compare our method to RECB. Despite RECB assuming oracle robot primitives with 100% success, our method still significantly outperforms it. -->
+            <p>In our real-world user study, MICoBot achieves a 78% task success rate, compared to 28% for the LLM baseline, by leveraging human assistance on 38% of the steps. (Figure on left.)
             </p>
           </div>
           <h2 class="title is-5 has-text-justified">How do users feel about working with our system?</h2>
           <div class="content has-text-justified">
-            <p>In an A/B blind preference test, 83% of the 18 users preferred our method MICoBot over the LLM baseline, and rated MICoBot considerably higher on four Likert-score metrics.</p>
-            <img src="static/images/likert_plot.png"></img>
+            <p>In an A/B blind preference test, 78% of the 18 users preferred our method MICoBot over the LLM baseline, and rated MICoBot considerably higher on four Likert-score metrics. (See user scores above right.)</p>
           </div>
 
           <h2 class="title is-5 has-text-justified">Is mixed-initiative dialog critical to our method's performance?</h2>
           <div class="content has-text-justified">
-            <p>The ablations in simulation demonstrate our full method outperforms both ablated variants that restrict dialog to single-initiative modes: robot-only initiation (R-init) and human-only initiation (H-init). (Figure on right.) These results underscore the importance of mixed-initiative dialog in enabling flexible, robust human-robot collaboration.
+            <p>The ablations in simulation (above left, lower subplot) demonstrate our full method outperforms both ablated variants that restrict dialog to single-initiative modes: robot-only initiation (R-init) and human-only initiation (H-init). These results underscore the importance of mixed-initiative dialog in enabling flexible, robust human-robot collaboration.
             </p>
           </div>
         </div>
@@ -367,7 +369,7 @@
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe  src="static/pdfs/icra_poster_v1.pdf" width="100%" height="550">
           </iframe>
         
       </div>
